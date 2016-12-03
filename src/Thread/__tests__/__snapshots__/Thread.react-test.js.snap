@@ -1,0 +1,26 @@
+exports[`test Thread DOM should render correctly 1`] = `
+<div
+  className="thread"
+  id="thread1">
+  <div
+    className="post"
+    id="thread1_post0">
+    <div>
+      Title: 無題 User: JKwelkf23jv At: 19911209
+    </div>
+    <p>
+      content1
+    </p>
+  </div>
+  <div
+    className="post"
+    id="thread1_post1">
+    <div>
+      Title: 無題 User: 12kjgvsk3mc At: 19911210
+    </div>
+    <p>
+      content2
+    </p>
+  </div>
+</div>
+`;

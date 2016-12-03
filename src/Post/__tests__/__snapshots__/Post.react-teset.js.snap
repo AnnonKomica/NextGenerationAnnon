@@ -1,0 +1,12 @@
+exports[`test POST DOM should render correctly 1`] = `
+<div
+  className="post"
+  id="thread1_post0">
+  <div>
+    Title: 無題 User: JKwelkf23jv At: 19911209
+  </div>
+  <p>
+    content1
+  </p>
+</div>
+`;
