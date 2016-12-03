@@ -3,6 +3,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Thread from "./Thread";
 
+require("./ThumbnailMediaElement/sass/ThumbnailMediaElement.scss");
+require("./Thread/sass/Thread.scss");
+require("./Post/sass/Post.scss");
+
 const ThreadData = {
     id: "thread2",
     posts: [{
@@ -19,6 +23,12 @@ const ThreadData = {
     }, {
         id: "post2",
         imgSrc: "./images/testImage1.jpg",
+        userId: "12kg9q23ngvc",
+        content: "content3",
+        timestamp: "20160912",
+    }, {
+        id: "post3",
+        imgSrc: "./images/testWebM.webm",
         userId: "12kg9q23ngvc",
         content: "content3",
         timestamp: "20160912",

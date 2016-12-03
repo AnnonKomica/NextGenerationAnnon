@@ -1,0 +1,45 @@
+exports[`test ImageMediaElement DOM should render correctly 1`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+</div>
+`;
+
+exports[`test ImageMediaElement DOM should render correctly 2`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail thumbnail-media__thumbnail--raw-loading"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+  <img
+    className="thumbnail-media__raw-media--image thumbnail-media__raw-media--loading"
+    onClick={[Function]}
+    onLoad={[Function]}
+    src="rawMediaSrc" />
+</div>
+`;
+
+exports[`test ImageMediaElement DOM should render correctly 3`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail thumbnail-media__thumbnail--show-raw"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+  <img
+    className="thumbnail-media__raw-media--image"
+    onClick={[Function]}
+    onLoad={[Function]}
+    src="rawMediaSrc" />
+</div>
+`;
+
+exports[`test ImageMediaElement DOM should render correctly 4`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+</div>
+`;

@@ -1,6 +1,7 @@
 // @flow
 import React from "react";
 import shallowCompare from "react-addons-shallow-compare";
+import PostMedia from "./PostMedia";
 
 type Props = {
     threadId: string,
@@ -42,12 +43,12 @@ export default class Post extends React.Component {
 
         return (
             <div id={`${threadId}_${postId}`} className="post">
-                {imgSrc ? <img src={imgSrc} /> : null}
                 <div>{
                     `Title: ${title || DefaultValue.TITLE} ` +
                     `User: ${nickName || generatedUserId} ` +
                     `At: ${timestamp}`
                 }</div>
+                <PostMedia mediaSrc={imgSrc} />
                 <p>{content}</p>
             </div>
         );

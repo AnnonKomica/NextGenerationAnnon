@@ -1,0 +1,63 @@
+exports[`test WebMMediaElement DOM should render correctly 1`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+</div>
+`;
+
+exports[`test WebMMediaElement DOM should render correctly 2`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail thumbnail-media__thumbnail--raw-loading"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+  <div
+    className="thumbnail-media__raw-media-container thumbnail-media__raw-media--loading">
+    <video
+      autoPlay={true}
+      className="thumbnail-media__raw-media--webm"
+      controls={true}
+      onCanPlay={[Function]}
+      src="rawMediaSrc" />
+    <div
+      className="thumbnail-media__raw-media-close-button"
+      onClick={[Function]}>
+      x
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test WebMMediaElement DOM should render correctly 3`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail thumbnail-media__thumbnail--show-raw"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+  <div
+    className="thumbnail-media__raw-media-container">
+    <video
+      autoPlay={true}
+      className="thumbnail-media__raw-media--webm"
+      controls={true}
+      onCanPlay={[Function]}
+      src="rawMediaSrc" />
+    <div
+      className="thumbnail-media__raw-media-close-button"
+      onClick={[Function]}>
+      x
+    </div>
+  </div>
+</div>
+`;
+
+exports[`test WebMMediaElement DOM should render correctly 4`] = `
+<div>
+  <img
+    className="thumbnail-media__thumbnail"
+    onClick={[Function]}
+    src="thumbnailSrc" />
+</div>
+`;
