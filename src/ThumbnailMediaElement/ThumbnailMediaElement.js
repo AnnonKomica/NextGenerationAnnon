@@ -66,7 +66,7 @@ export default class ThumbnailMediaElement extends React.Component {
         const rawMediaElement = this._getRawMediaElement();
         const thumbnailClasses = ClassNameUtil.classNames(["thumbnail-media__thumbnail"], {
             "thumbnail-media__thumbnail--raw-loading": (showRaw && !detailLoaded),
-            "thumbnail-media__thumbnail--show-raw": (showRaw && detailLoaded)
+            "hide": (showRaw && detailLoaded)
         });
 
         return (

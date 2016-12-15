@@ -2,14 +2,15 @@
 import React from "react";
 import shallowCompare from "react-addons-shallow-compare";
 import PostMedia from "./PostMedia";
+import PostContent from "./PostContent";
 
 type Props = {
     threadId: string,
-    id: string,
     imgSrc?: string,
     nickName?: string,
     title?: string,
     userId: string,
+    postNumber: string,
     content: string,
     timestamp: string,
 }
@@ -18,6 +19,7 @@ type State = {};
 
 const DefaultValue = {
     TITLE: "無題",
+    NAME: "無名"
 };
 
 export default class Post extends React.Component {
@@ -31,25 +33,26 @@ export default class Post extends React.Component {
 
     render() {
         const {
-            id: postId,
-            threadId,
             imgSrc,
             title,
             nickName,
             userId: generatedUserId,
             content,
+            postNumber,
             timestamp,
         } = this.props;
 
         return (
-            <div id={`${threadId}_${postId}`} className="post">
-                <div>{
-                    `Title: ${title || DefaultValue.TITLE} ` +
-                    `User: ${nickName || generatedUserId} ` +
-                    `At: ${timestamp}`
-                }</div>
+            <div id={`${postNumber}`} className="post">
+                <div>
+                    <span>{`${title || DefaultValue.TITLE} `}</span>
+                    <span>{`${nickName || DefaultValue.NAME} `}</span>
+                    <span>{`${new Date(timestamp).toLocaleDateString()} `}</span>
+                    <span>{`${postNumber} `}</span>
+                    <span>{`${generatedUserId}`}</span>
+                </div>
                 <PostMedia mediaSrc={imgSrc} />
-                <p>{content}</p>
+                <PostContent>{content}</PostContent>
             </div>
         );
     }

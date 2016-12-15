@@ -10,28 +10,28 @@ require("./Post/sass/Post.scss");
 const ThreadData = {
     id: "thread2",
     posts: [{
-        id: "post0",
         imgSrc: "./images/testImage0.jpg",
         userId: "JKwelkf23jv",
-        content: "content1",
-        timestamp: "19911209",
+        content: "content1\ng/1002188/2c062bad62/",
+        postNumber: "80008080",
+        timestamp: "1991/12/09",
     }, {
-        id: "post1",
         userId: "12kjgvsk3mc",
         content: "content20l",
-        timestamp: "19911210",
+        postNumber: "80008081",
+        timestamp: "1991/12/10",
     }, {
-        id: "post2",
         imgSrc: "./images/testImage1.jpg",
         userId: "12kg9q23ngvc",
         content: "content3",
-        timestamp: "20160912",
+        postNumber: "80008082",
+        timestamp: "2016/09/12",
     }, {
-        id: "post3",
         imgSrc: "./images/testWebM.webm",
         userId: "12kg9q23ngvc",
-        content: "content3",
-        timestamp: "20160912",
+        content: ">>80008080\ncontent3\nhttps://youtu.be/sBtZKwCrg8Y",
+        postNumber: "80008083",
+        timestamp: "2016/09/12",
     }]
 };
 

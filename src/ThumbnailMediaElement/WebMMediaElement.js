@@ -15,7 +15,7 @@ export default class WebMMediaElement extends ThumbnailMediaElement {
         }
 
         const containerClass = ClassNameUtil.classNames(["thumbnail-media__raw-media-container"], {
-            "thumbnail-media__raw-media--loading": !detailLoaded,
+            "hide": !detailLoaded,
         });
 
 

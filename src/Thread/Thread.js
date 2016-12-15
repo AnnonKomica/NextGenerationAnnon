@@ -8,11 +8,11 @@ type Props = {
 };
 
 type PostObject = {
-    id: string,
     imgSrc?: string,
     nickName?: string,
     title?: string,
     userId: string,
+    postNumber: string,
     content: string,
     timestamp: string,
 }
@@ -29,7 +29,7 @@ export default class Thread extends React.Component {
 
         return posts.map((post) => (
             <Post
-                key={post.id}
+                key={post.postNumber}
                 threadId={threadId}
                 {...post}
             />
@@ -37,10 +37,8 @@ export default class Thread extends React.Component {
     }
 
     render() {
-        const {id: threadId} = this.props;
-
         return (
-            <div id={threadId} className='thread'>
+            <div className='thread'>
                 {this._renderPosts()}
             </div>
         );
